@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { signout, isAuthenticated } from '../auth/helper/index'
@@ -24,14 +24,20 @@ const Menu = ({ history }) => {
             <Nav.Link href='#gallary'>Gallary</Nav.Link>
             <Nav.Link href='#more'>More..</Nav.Link>
           </Nav>
-          <Navbar.Collapse className='justify-content-end'>
-            <Nav.Link style={currentTab(history, '/')} href='/signup'>
-              REGISTER
-            </Nav.Link>
-            <Nav.Link style={currentTab(history, '/')} href='/signin'>
-              LOGIN
-            </Nav.Link>
-          </Navbar.Collapse>
+
+          {!isAuthenticated() && (
+            <Fragment>
+              <Navbar.Collapse className='justify-content-end'>
+                <Nav.Link style={currentTab(history, '/')} href='/signup'>
+                  REGISTER
+                </Nav.Link>
+                <Nav.Link style={currentTab(history, '/')} href='/signin'>
+                  LOGIN
+                </Nav.Link>
+              </Navbar.Collapse>
+            </Fragment>
+          )}
+
           {isAuthenticated() && (
             <Navbar.Collapse className='justify-content-end'>
               <Nav.Link
