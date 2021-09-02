@@ -13,7 +13,6 @@ const Base = ({
       <Menu />
       <div className='container-fluid'>
         <div className={className}>{children}</div>
-        <h1>hi</h1>
       </div>
       <Footer />
     </div>
