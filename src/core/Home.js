@@ -20,28 +20,35 @@ const Home = () => {
       <Carousel>
         <Carousel.Item>
           <img
-            classNameNameNameName='d-block w-100'
+            className='d-block w-100'
             src={one}
             alt='First slide'
           />
+          <Carousel.Caption>
+        <h3 className='text-light' style={{color: 'green'}}>AMRITA VISHWA VIDYAPEETHAM</h3>
+        <p className='text-light'>COIMBATORE</p>
+        </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            classNameNameNameName='d-block w-100'
+            className='d-block w-100'
             src={two}
             alt='Second slide'
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            classNameNameNameName='d-block w-100'
+            className='d-block w-100'
             src={three}
             alt='Third slide'
           />
+          <Carousel.Caption>
+        <h3 className='text-dark' style={{color: 'green'}}>TOP RATED UNIVERSITY IN INDIA</h3>
+        </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
 
-      <div classNameName='container marketing'>
+      <div className='container marketing'>
         <div className='custom'>
           <div className='row'>
             <div className='col-lg-4'>
@@ -102,6 +109,7 @@ const Home = () => {
                 background='#eee'
                 color='#aaa'
                 class='bd-placeholder-img-lg featurette-image img-fluid mx-auto'
+                style={{marginTop: 220, marginRight: 20}}
               />
             </div>
           </div>
@@ -124,6 +132,7 @@ const Home = () => {
                 background='#eee'
                 color='#aaa'
                 class='bd-placeholder-img-lg featurette-image img-fluid mx-auto'
+                style={{marginTop: 75, marginLeft: 50}}
               />
             </div>
           </div>
@@ -146,6 +155,7 @@ const Home = () => {
                 background='#eee'
                 color='#aaa'
                 class='bd-placeholder-img-lg featurette-image img-fluid mx-auto'
+                style={{marginTop: 80, marginLeft: 80}}
               />
             </div>
           </div>
