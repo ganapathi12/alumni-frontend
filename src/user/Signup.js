@@ -80,7 +80,7 @@ const Signup = () => {
                 class='btn btn-success m-5 rounded '
                 type='button'
               >
-                Button
+                Register
               </button>
             </div>
           </form>
