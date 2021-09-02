@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import { Navbar, Nav, Container} from 'react-bootstrap'
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
@@ -11,69 +12,27 @@ const currentTab = (history, path) => {
 
 const Menu = ({ history }) => {
   return (
-    <div>
-      <ul className='nav nav-tabs bg-dark sticky-top '>
-        <li className='nav-item'>
-          <Link style={currentTab(history, '/')} className='nav-link' to='/'>
-            Home
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link
-            style={currentTab(history, '/cart')}
-            className='nav-link'
-            to='/cart'
-          >
-            Cart
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link
-            style={currentTab(history, '/user/dashboard')}
-            className='nav-link'
-            to='/user/dashboard'
-          >
-            Dashboard
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link
-            style={currentTab(history, '/admin/dashboard')}
-            className='nav-link'
-            to='/admin/dashboard'
-          >
-            A. Dashboard
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link
-            style={currentTab(history, '/signup')}
-            className='nav-link'
-            to='/signup'
-          >
-            Signup
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link
-            style={currentTab(history, '/signin')}
-            className='nav-link'
-            to='/signin'
-          >
-            Signin
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link
-            style={currentTab(history, '/signout')}
-            className='nav-link'
-            to='/signout'
-          >
-            Signout
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <>
+  <Navbar bg="dark" variant="dark">
+    <Container>
+    <Navbar.Brand href="#home">Amrita Alumni Portal</Navbar.Brand>
+    <Nav className="me-auto">
+      {/* <Nav.Link href="#home">Home</Nav.Link> */}
+      <Nav.Link href="#blogs">Blogs</Nav.Link>
+      <Nav.Link href="#chat">Messenger</Nav.Link>
+      <Nav.Link href="#gallary">Gallary</Nav.Link>
+      <Nav.Link href="#more">More..</Nav.Link>
+    </Nav>
+    <Navbar.Collapse className="justify-content-end">
+      <Nav.Link href="#register">REGISTER</Nav.Link>
+      <Nav.Link href="#login">LOGIN</Nav.Link>
+    </Navbar.Collapse>
+    {/* <Navbar.Collapse className="justify-content-end">
+      <Nav.Link href="#home">LOGOUT</Nav.Link>
+    </Navbar.Collapse> */}
+    </Container>
+  </Navbar>
+</>
   )
 }
 
