@@ -89,7 +89,6 @@ const Signup = () => {
                 Register
               </button>
             </div>
-            
           </form>
           </div>
       </FormGroup>
@@ -103,18 +102,6 @@ const Signup = () => {
             />
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-      
-
     )
   }
   const sucessMessage = () => {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Base from '../core/Base'
-import { Link, Redirect } from 'react-router-dom'
+import background from './img1.jpg'
+import { FormGroup } from 'react-bootstrap'
 
 import { signin, authenticate, isAuthenticated } from '../auth/helper'
 
@@ -80,11 +81,14 @@ const Signin = () => {
 
   const signinForm = () => {
     return (
-      <div className='row mt-5 bg-secondary pt-5'>
-        <div className='col-md-6 offset-sm-3 text-left'>
-          <form>
+      <div class='row'>
+      <div class='col-md-4'>
+      <FormGroup>
+      <div className='form-group' style={{marginTop: 80}}> 
+      <form>
+        <h3 className='text-dark text-center'>Login </h3>
             <div className='form-group'>
-              <label className='text-light'>Email</label>
+              <label className='text-dark'>Email</label>
               <input
                 className='form-control'
                 type='email'
@@ -92,8 +96,9 @@ const Signin = () => {
                 value={email}
               />
             </div>
+            <br></br>
             <div className='form-group'>
-              <label className='text-light'>Password</label>
+              <label className='text-dark'>Password</label>
               <input
                 className='form-control'
                 type='password'
@@ -101,6 +106,7 @@ const Signin = () => {
                 onChange={handleChange('password')}
               />
             </div>
+            <br></br>
             <div class='d-grid gap-2 form-group'>
               <button
                 onClick={onsubmit}
@@ -111,8 +117,18 @@ const Signin = () => {
               </button>
             </div>
           </form>
-        </div>
+          </div>
+          </FormGroup>
+          </div>
+      <div class='col-md-7'>
+        <img src={background}  
+            width='2000'
+            height='1000'
+             class='bd-placeholder-img-lg img-fluid ' 
+            style={{marginTop: 65, marginLeft: 80}}
+            />
       </div>
+    </div>
     )
   }
   return (
