@@ -1,9 +1,15 @@
 import Menu from './menu'
 import { Button, Carousel, img, p, div, Placeholder } from 'react-bootstrap'
 import React from 'react'
-import one from './gallary/1.jpg'
-import four from './gallary/4.jpg'
-import seven from './gallary/7.jpg'
+import one from './gallary/7.jpg'
+import two from './gallary/4.jpg'
+import three from './gallary/10.png'
+import four from './gallary/15.jpg'
+import five from './gallary/16.jpg'
+import six from './gallary/17.jpg'
+import seven from './gallary/11.jpg'
+import eight from './gallary/14.png'
+import nine from './gallary/13.png'
 import './carousel.css'
 import Footer from './Footer'
 
@@ -18,36 +24,20 @@ const Home = () => {
             src={one}
             alt='First slide'
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             classNameNameNameName='d-block w-100'
-            src={four}
+            src={two}
             alt='Second slide'
           />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             classNameNameNameName='d-block w-100'
-            src={seven}
+            src={three}
             alt='Third slide'
           />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
 
@@ -57,76 +47,56 @@ const Home = () => {
             <div className='col-lg-4'>
               <img
                 className='rounded-circle'
-                src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                src={four}
                 alt='Generic placeholder image'
                 width='140'
                 height='140'
               />
-              <h2>Heading</h2>
+              <h2>GREEN INITIATIVES</h2>
               <p>
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
-              </p>
-              <p>
-                <a className='btn btn-secondary' href='#'>
-                  View details &raquo;
-                </a>
+                Amrita Chancellor Supports PM During Swacchta Hi Seva Relaunch
               </p>
             </div>
             <div className='col-lg-4'>
               <img
                 className='rounded-circle'
-                src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                src={five}
                 alt='Generic placeholder image'
                 width='140'
                 height='140'
               />
-              <h2>Heading</h2>
+              <h2>Events</h2>
               <p>
-                Another exciting bit of representative placeholder content. This
-                time, we've moved on to the second column.
-              </p>
-              <p>
-                <a className='btn btn-secondary' href='#'>
-                  View details &raquo;
-                </a>
+                Amrita Online FDP on Empowering Teaching Professionals
               </p>
             </div>
             <div className='col-lg-4'>
               <img
                 className='rounded-circle'
-                src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                src={six}
                 alt='Generic placeholder image'
                 width='140'
                 height='140'
               />
-              <h2>Heading</h2>
+              <h2>Awards</h2>
               <p>
-                And lastly this, the third column of representative placeholder
-                content.
-              </p>
-              <p>
-                <a className='btn btn-secondary' href='#'>
-                  View details &raquo;
-                </a>
+               Amrita Student Team Aces European Urban Mobility Hackathon 2021
               </p>
             </div>
           </div>
           <div class='row featurette'>
             <div class='col-md-7'>
               <h2 class='featurette-heading'>
-                First featurette heading.{' '}
-                <span class='text-muted'>It’ll blow your mind.</span>
+                National Assessment and Accreditation Council (NAAC)
               </h2>
               <p class='lead'>
-                Some great placeholder content for the first featurette here.
-                Imagine some exciting prose here.
+              Amrita Vishwa Vidyapeetham was the youngest institution to be awarded with an 'A++' grade by the National Assessment and Accreditation Council (NAAC), an autonomous body established in 1994 by the University Grants Commission (UGC) of India to assess and accredit institutions of higher education in the country. To be eligible to apply for the NAAC accreditation, an educational institution should have completed five years. Amrita Vishwa Vidyapeetham had just completed six years in January 2009 when it applied for the accreditation. 'A++' is the highest grade that can be awarded to the best-in-class institutions for higher learning.
               </p>
             </div>
             <div class='col-md-5'>
               {/* {{< placeholder width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" >}} */}
               <img
-                src={one}
+                src={seven}
                 width='500'
                 height='500'
                 background='#eee'
@@ -139,19 +109,16 @@ const Home = () => {
           <div class='row featurette'>
             <div class='col-md-7 order-md-2'>
               <h2 class='featurette-heading'>
-                Oh yeah, it’s that good.{' '}
-                <span class='text-muted'>See for yourself.</span>
+              National Board of Accreditation (NBA)
               </h2>
               <p class='lead'>
-                Another featurette? Of course. More placeholder content here to
-                give you an idea of how this layout would work with some actual
-                real-world content in place.
+              The B. Pharm. and B. Tech. programs of Amrita Vishwa Vidyapeetham, got reaccredited by the National Board of Accreditation (NBA). The National Board of Accreditation (NBA) is one of the two major bodies responsible for accreditation of higher education institutions in India. NBA accredits technical programmes, such engineering and management programmes and is a full member of the Washington Accord. 
               </p>
             </div>
             <div class='col-md-5 order-md-1'>
               {/* {{< placeholder width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" >}} */}
               <img
-                src={one}
+                src={eight}
                 width='500'
                 height='500'
                 background='#eee'
@@ -164,18 +131,16 @@ const Home = () => {
           <div class='row featurette'>
             <div class='col-md-7'>
               <h2 class='featurette-heading'>
-                First featurette heading.{' '}
-                <span class='text-muted'>It’ll blow your mind.</span>
+              Times Higher Education (THE) Rankings
               </h2>
               <p class='lead'>
-                Some great placeholder content for the first featurette here.
-                Imagine some exciting prose here.
+              In the 2020 edition of the annual rankings released, Amrita Vishwa Vidyapeetham has been placed in the list of 601-800 category. The ranking features universities in 70 countries and seventeen Indian higher education institutions have featured in the list of the world's best universities.
               </p>
             </div>
             <div class='col-md-5'>
               {/* {{< placeholder width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" >}} */}
               <img
-                src={one}
+                src={nine}
                 width='500'
                 height='500'
                 background='#eee'
