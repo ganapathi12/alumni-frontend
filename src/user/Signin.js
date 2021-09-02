@@ -107,7 +107,7 @@ const Signin = () => {
                 class='btn btn-success m-5 '
                 type='button'
               >
-                Button
+                Submit
               </button>
             </div>
           </form>
