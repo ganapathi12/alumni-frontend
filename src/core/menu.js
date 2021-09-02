@@ -27,9 +27,9 @@ const Menu = ({ history }) => {
             <Nav.Link style={currentTab(history, '/')} href='/signup'>REGISTER</Nav.Link>
             <Nav.Link style={currentTab(history, '/')} href='/signin'>LOGIN</Nav.Link>
           </Navbar.Collapse>
-          {/* <Navbar.Collapse className="justify-content-end">
+          <Navbar.Collapse className="justify-content-end">
       <Nav.Link href="#home">LOGOUT</Nav.Link>
-    </Navbar.Collapse> */}
+    </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

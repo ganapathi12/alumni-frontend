@@ -121,7 +121,7 @@ const Signin = () => {
       {errorMessage()}
       {signinForm()}
       {performRedirect()}
-      <p className='text-black text-center'>{JSON.stringify(values)}</p>
+      {/* <p className='text-black text-center'>{JSON.stringify(values)}</p> */}
     </Base>
   )
 }
