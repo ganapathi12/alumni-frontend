@@ -22,8 +22,12 @@ const Menu = ({ history }) => {
             <Nav.Link href='#blogs'>Blogs</Nav.Link>
             <Nav.Link href='#chat'>chat</Nav.Link>
             <Nav.Link href='#gallary'>Gallary</Nav.Link>
-            <Nav.Link href='/user/dashboard'>User Dashboard</Nav.Link>
-            <Nav.Link href='/admin/dashboard'>Admin Dashboard</Nav.Link>
+            {isAuthenticated() && isAuthenticated().user.role === 0 && (
+              <Nav.Link href='/user/dashboard'>User Dashboard</Nav.Link>
+            )}
+            {isAuthenticated() && isAuthenticated().user.role === 1 && (
+              <Nav.Link href='/admin/dashboard'>Admin Dashboard</Nav.Link>
+            )}
           </Nav>
 
           {!isAuthenticated() && (
