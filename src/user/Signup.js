@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Base from '../core/Base'
 import { Link } from 'react-router-dom'
 import { signup } from '../auth/helper'
-import "../styles.css"
 
 const Signup = () => {
   const [values, setValues] = useState({
@@ -44,7 +43,7 @@ const Signup = () => {
 
   const signupForm = () => {
     return (
-      <div className='row mt-5'>
+      <div className='row mt-5 bg-secondary pt-5'>
         <div className='col-md-6 offset-sm-3 text-left'>
           <form>
             <div className='form-group'>

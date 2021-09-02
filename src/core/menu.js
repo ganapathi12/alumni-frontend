@@ -18,13 +18,13 @@ const Menu = ({ history }) => {
           <Navbar.Brand href='/'>Amrita Alumni Portal</Navbar.Brand>
           <Nav className='me-auto'>
             {/* <Nav.Link href="#home">Home</Nav.Link> */}
-            <Nav.Link href='#blogs'>Blogs</Nav.Link>
+            <Nav.Link  href='#blogs'>Blogs</Nav.Link>
             <Nav.Link href='#chat'>Messenger</Nav.Link>
             <Nav.Link href='#gallary'>Gallary</Nav.Link>
             <Nav.Link href='#more'>More..</Nav.Link>
           </Nav>
           <Navbar.Collapse className='justify-content-end'>
-            <Nav.Link href='/signup'>REGISTER</Nav.Link>
+            <Nav.Link style={currentTab(history, '/')} href='/signup'>REGISTER</Nav.Link>
             <Nav.Link href='/signin'>LOGIN</Nav.Link>
           </Navbar.Collapse>
           {/* <Navbar.Collapse className="justify-content-end">

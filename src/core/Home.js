@@ -15,7 +15,7 @@ import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div className='pt-4'>
+    <div >
       <Menu />
       <Carousel>
         <Carousel.Item>

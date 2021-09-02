@@ -11,7 +11,7 @@ const Base = ({
   return (
     <div>
       <Menu />
-      <div className='container-fluid'>
+      <div className='container-fluid '>
         <div className={className}>{children}</div>
       </div>
       <Footer />
