@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Base from '../core/Base'
 import { Link } from 'react-router-dom'
 import { signup } from '../auth/helper'
+import background from './img.jpg'
+import { FormGroup } from 'react-bootstrap'
 
 const Signup = () => {
   const [values, setValues] = useState({
@@ -43,11 +45,15 @@ const Signup = () => {
 
   const signupForm = () => {
     return (
-      <div className='row mt-5 bg-secondary pt-5'>
-        <div className='col-md-6 offset-sm-3 text-left'>
-          <form>
+      //<div className='' style={{ backgroundImage: `url(${background})`, marginLeft: 300} }>
+      <div class='row'>
+      <div class='col-md-4'>
+      <FormGroup>
+      <div className='form-group' style={{marginTop: 80}}>
+          <form>    
+          <h3 className='text-dark text-center'>Register Form</h3>
             <div className='form-group'>
-              <label className='text-light'>Name</label>
+              <label className='text-dark'>Name</label>
               <input
                 className='form-control'
                 onChange={handleChange('name')}
@@ -55,17 +61,17 @@ const Signup = () => {
                 value={name}
               />
             </div>
-            <div className='form-group'>
-              <label className='text-light'>Email</label>
+            <br></br>
+              <label className='text-dark'>Email</label>
               <input
                 className='form-control'
                 onChange={handleChange('email')}
                 type='email'
                 value={email}
               />
-            </div>
+            <br></br>
             <div className='form-group'>
-              <label className='text-light'>Password</label>
+              <label className='text-dark'>Password</label>
               <input
                 className='form-control'
                 onChange={handleChange('password')}
@@ -73,22 +79,44 @@ const Signup = () => {
                 value={password}
               />
             </div>
+            <br></br>
             <div class='d-grid gap-2 form-group'>
               <button
                 onClick={onSubmit}
-
                 class='btn btn-success m-5 rounded '
                 type='button'
               >
                 Register
               </button>
             </div>
+            
           </form>
-        </div>
+          </div>
+      </FormGroup>
       </div>
+      <div class='col-md-7'>
+        <img src={background}  
+            width='2000'
+            height='1000'
+             class='bd-placeholder-img-lg img-fluid ' 
+            style={{marginTop: 110, marginLeft: 80}}
+            />
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+      
+
     )
   }
-
   const sucessMessage = () => {
     return (
       <div className='row'>
