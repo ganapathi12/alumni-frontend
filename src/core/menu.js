@@ -20,9 +20,10 @@ const Menu = ({ history }) => {
           <Nav className='me-auto'>
             {/* <Nav.Link href="#home">Home</Nav.Link> */}
             <Nav.Link href='#blogs'>Blogs</Nav.Link>
-            <Nav.Link href='#chat'>Messenger</Nav.Link>
+            <Nav.Link href='#chat'>chat</Nav.Link>
             <Nav.Link href='#gallary'>Gallary</Nav.Link>
-            <Nav.Link href='#more'>More..</Nav.Link>
+            <Nav.Link href='/user/dashboard'>User Dashboard</Nav.Link>
+            <Nav.Link href='/admin/dashboard'>Admin Dashboard</Nav.Link>
           </Nav>
 
           {!isAuthenticated() && (

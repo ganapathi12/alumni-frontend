@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Base from '../core/Base'
 import background from './img1.jpg'
 import { FormGroup } from 'react-bootstrap'
-
+import { Link, Redirect } from 'react-router-dom'
 import { signin, authenticate, isAuthenticated } from '../auth/helper'
 
 const Signin = () => {
@@ -45,9 +45,9 @@ const Signin = () => {
   const performRedirect = () => {
     if (didRedirect) {
       if (user && user.role === 1) {
-        return <p className="text-black">Redirect to admin</p>
+        return <Redirect to="/admin/dashboard" />
       } else {
-        return <p className="text-black">Redirect to user page</p>
+        return <Redirect to="/user/dashboard" />
       }
     }
     // if (isAuthenticated()) {
