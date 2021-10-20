@@ -21,7 +21,7 @@ const Menu = ({ history }) => {
             {/* <Nav.Link href="#home">Home</Nav.Link> */}
             <Nav.Link href='http://localhost:2020/todoweb/'>Blogs</Nav.Link>
             <Nav.Link href='#chat'>chat</Nav.Link>
-            <Nav.Link href='#gallary'>Gallary</Nav.Link>
+            <Nav.Link href='University_gallery'>Gallary</Nav.Link>
             {/* {isAuthenticated() && isAuthenticated().user.role === 0 && (
               <Nav.Link href='/user/dashboard'>User Dashboard</Nav.Link>
             )}

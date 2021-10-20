@@ -8,6 +8,7 @@ import AdminRoute from './auth/helper/AdminRoutes'
 import PrivateRoute from './auth/helper/PrivateRoutes'
 import UserDashBoard from './user/UserDashBoard'
 import AdminDashBoard from './user/AdminDashBoard'
+import U_gallery from './core/U_gallery/Gallery';
 
 const Routes = () => {
   return (
@@ -18,10 +19,16 @@ const Routes = () => {
           <Route path='/test' exact component={Base} />
           <Route path='/signup' exact component={Signup} />
           <Route path='/signin' exact component={Signin} />
+          <Route path='/University_gallery' exact component={Signin}/>
           <PrivateRoute
             path='/user/dashboard'
             exact
             component={UserDashBoard}
+          />
+          <PrivateRoute
+            path='/user/University_gallery'
+            exact
+            component={U_gallery}
           />
           <AdminRoute
             path='/admin/dashboard'
