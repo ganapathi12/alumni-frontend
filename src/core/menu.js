@@ -19,15 +19,15 @@ const Menu = ({ history }) => {
           <Navbar.Brand href='/'>Amrita Alumni Portal</Navbar.Brand>
           <Nav className='me-auto'>
             {/* <Nav.Link href="#home">Home</Nav.Link> */}
-            <Nav.Link href='#blogs'>Blogs</Nav.Link>
+            <Nav.Link href='http://localhost:2020/todoweb/'>Blogs</Nav.Link>
             <Nav.Link href='#chat'>chat</Nav.Link>
             <Nav.Link href='#gallary'>Gallary</Nav.Link>
-            {isAuthenticated() && isAuthenticated().user.role === 0 && (
+            {/* {isAuthenticated() && isAuthenticated().user.role === 0 && (
               <Nav.Link href='/user/dashboard'>User Dashboard</Nav.Link>
             )}
             {isAuthenticated() && isAuthenticated().user.role === 1 && (
               <Nav.Link href='/admin/dashboard'>Admin Dashboard</Nav.Link>
-            )}
+            )} */}
           </Nav>
 
           {!isAuthenticated() && (
