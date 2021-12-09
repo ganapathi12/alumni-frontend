@@ -19,17 +19,18 @@ const Routes = () => {
           <Route path='/test' exact component={Base} />
           <Route path='/signup' exact component={Signup} />
           <Route path='/signin' exact component={Signin} />
-          <Route path='/University_gallery' exact component={Signin}/>
+          <Route path='/user/University_gallery' exact component={U_gallery}/>
+          <Route path='/University_gallery' exact component={U_gallery}/>
           <PrivateRoute
             path='/user/dashboard'
             exact
             component={UserDashBoard}
           />
-          <PrivateRoute
+          {/* <PrivateRoute
             path='/user/University_gallery'
             exact
             component={U_gallery}
-          />
+          /> */}
           <AdminRoute
             path='/admin/dashboard'
             exact

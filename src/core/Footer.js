@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='container'>
         <span className='text-muted'>
           Net Centric Programming {'  '}
-          <span className='text-white'>Alumni Portal CSE A</span>
+          <span className='text-white'>Alumni Portal CSE D</span>
         </span>
       </div>
     </footer>

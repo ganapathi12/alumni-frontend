@@ -20,8 +20,8 @@ const Menu = ({ history }) => {
           <Nav className='me-auto'>
             {/* <Nav.Link href="#home">Home</Nav.Link> */}
             <Nav.Link href='http://localhost:2020/todoweb/'>Blogs</Nav.Link>
-            <Nav.Link href='#chat'>chat</Nav.Link>
-            <Nav.Link href='University_gallery'>Gallary</Nav.Link>
+            <Nav.Link href='http://localhost:2020/Chat_App/'>chat</Nav.Link>
+            <Nav.Link href='University_gallery'>Gallery</Nav.Link>
             {/* {isAuthenticated() && isAuthenticated().user.role === 0 && (
               <Nav.Link href='/user/dashboard'>User Dashboard</Nav.Link>
             )}
@@ -29,7 +29,7 @@ const Menu = ({ history }) => {
               <Nav.Link href='/admin/dashboard'>Admin Dashboard</Nav.Link>
             )} */}
           </Nav>
-
+{/* 
           {!isAuthenticated() && (
             <Fragment>
               <Navbar.Collapse className='justify-content-end'>
@@ -55,7 +55,7 @@ const Menu = ({ history }) => {
                 LOGOUT
               </Nav.Link>
             </Navbar.Collapse>
-          )}
+          )} */}
         </Container>
       </Navbar>
     </>
