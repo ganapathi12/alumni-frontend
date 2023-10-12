@@ -1,3 +1,7 @@
+This application is a frontend application with a React framework.
+
+Below are the steps to setup application in your local
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
